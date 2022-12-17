@@ -17,8 +17,8 @@ function save_options() {
 
 function restore_options() {
   chrome.storage.local.get({
-    minSpeed: 0.5,
-    maxSpeed: 2.5,
+    minSpeed: 0.0,
+    maxSpeed: 5.0,
     speedInterval: 0.1
   }, function(items) {
     document.getElementById("min").value = items.minSpeed;

@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Change slider to reflect options
   chrome.storage.local.get({
-    minSpeed: 0.5,
-    maxSpeed: 2.5,
+    minSpeed: 0.0,
+    maxSpeed: 5.0,
     speedInterval: 0.1
   }, function(items) {
     selectedSpeed.min = items.minSpeed;
